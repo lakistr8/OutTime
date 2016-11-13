@@ -12,10 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        // sad kreiram stori bord
+        let storyboard = UIStoryboard(name: "OutTime", bundle: nil)
+        guard let nc = storyboard.instantiateInitialViewController() as? UINavigationController else {
+            fatalError("ERROR")
+        }
+        self.window?.rootViewController = nc
+        
+        return true
+    }
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 
