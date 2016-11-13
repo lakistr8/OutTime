@@ -134,28 +134,34 @@
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ep7-u1-tRN">
-                                        <rect key="frame" x="175" y="0.0" width="200" height="301"/>
+                                        <rect key="frame" x="188" y="0.0" width="187" height="301"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="ZYe-F5-8RU"/>
-                                        </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZJR-C2-CPs">
-                                                <rect key="frame" x="0.0" y="28" width="200" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="187" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZJR-C2-CPs" id="EIV-Lv-awx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnH-9P-FbK">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="301"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZnH-9P-FbK" secondAttribute="bottom" id="7jC-lY-HyT"/>
+                                    <constraint firstItem="ZnH-9P-FbK" firstAttribute="top" secondItem="wqK-JM-HQd" secondAttribute="top" id="9oy-7X-1So"/>
+                                    <constraint firstItem="ZnH-9P-FbK" firstAttribute="width" secondItem="Ep7-u1-tRN" secondAttribute="width" id="FWA-Sa-CWJ"/>
+                                    <constraint firstItem="ZnH-9P-FbK" firstAttribute="leading" secondItem="wqK-JM-HQd" secondAttribute="leading" id="LwU-l1-g5Q"/>
                                     <constraint firstAttribute="bottom" secondItem="Ep7-u1-tRN" secondAttribute="bottom" id="MKY-Ej-MIT"/>
                                     <constraint firstAttribute="trailing" secondItem="Ep7-u1-tRN" secondAttribute="trailing" id="NZv-kO-pSb"/>
                                     <constraint firstItem="Ep7-u1-tRN" firstAttribute="top" secondItem="wqK-JM-HQd" secondAttribute="top" id="Nxr-ZB-54Y"/>
+                                    <constraint firstItem="Ep7-u1-tRN" firstAttribute="leading" secondItem="ZnH-9P-FbK" secondAttribute="trailing" constant="1" id="lyO-zn-YtE"/>
                                 </constraints>
                             </view>
                         </subviews>
