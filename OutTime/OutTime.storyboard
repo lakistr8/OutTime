@@ -53,13 +53,13 @@
                                                     <constraint firstAttribute="width" constant="100" id="vSV-P1-YXD"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-IG-2oK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-IG-2oK">
                                                 <rect key="frame" x="101" y="50" width="274" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="HhU-SQ-LBj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Orn-NE-nAM">
@@ -136,9 +136,35 @@
                                     <constraint firstAttribute="trailing" secondItem="NWH-Ne-bhZ" secondAttribute="trailing" id="xWe-dj-cNX"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaC-gy-lC6">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaC-gy-lC6" userLabel="down">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EBI-PF-oDc">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vPg-iM-D32">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vPg-iM-D32" id="U0M-bp-I0L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EBI-PF-oDc" secondAttribute="trailing" id="6Pr-cR-VwY"/>
+                                    <constraint firstAttribute="bottom" secondItem="EBI-PF-oDc" secondAttribute="bottom" id="OSk-F0-Y6F"/>
+                                    <constraint firstItem="EBI-PF-oDc" firstAttribute="leading" secondItem="QaC-gy-lC6" secondAttribute="leading" id="Rjp-n5-vXe"/>
+                                    <constraint firstItem="EBI-PF-oDc" firstAttribute="top" secondItem="QaC-gy-lC6" secondAttribute="top" constant="1" id="jkK-uG-oJQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,6 +184,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="a0K-Lg-h5S"/>
                     <connections>
+                        <outlet property="accImage" destination="C69-4r-4bx" id="lk1-Bi-LGV"/>
+                        <outlet property="listOfBrands" destination="EBI-PF-oDc" id="8Py-pL-fa3"/>
+                        <outlet property="nameFields" destination="Orn-NE-nAM" id="6Dy-kx-OA7"/>
+                        <outlet property="reklamView" destination="fTB-Sb-dEy" id="h4l-S1-sND"/>
+                        <outlet property="stuffLabel" destination="DF0-IG-2oK" id="LbF-TR-WXy"/>
                         <outlet property="stuffSearch" destination="Cta-dd-cmS" id="crp-jv-Kvj"/>
                     </connections>
                 </viewController>
