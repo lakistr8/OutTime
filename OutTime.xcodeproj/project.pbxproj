@@ -13,6 +13,7 @@
 		E85B5F961DD8CA2E0088998C /* OutTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F951DD8CA2E0088998C /* OutTime.storyboard */; };
 		E85B5F981DD8CB120088998C /* OutTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5F971DD8CB120088998C /* OutTime.swift */; };
 		E85B5F9A1DDA0FEE0088998C /* Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */; };
+		E85B5FA61DDA507E0088998C /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5FA51DDA507E0088998C /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E85B5F951DD8CA2E0088998C /* OutTime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OutTime.storyboard; sourceTree = "<group>"; };
 		E85B5F971DD8CB120088998C /* OutTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutTime.swift; sourceTree = "<group>"; };
 		E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Backgrounds.xcassets; sourceTree = "<group>"; };
+		E85B5FA51DDA507E0088998C /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */,
 				E85B5F8A1DD8C9EC0088998C /* LaunchScreen.storyboard */,
 				E85B5F951DD8CA2E0088998C /* OutTime.storyboard */,
+				E85B5FA51DDA507E0088998C /* LaunchScreen.swift */,
 				E85B5F971DD8CB120088998C /* OutTime.swift */,
 				E85B5F8D1DD8C9EC0088998C /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				E85B5F821DD8C9EC0088998C /* AppDelegate.swift in Sources */,
 				E85B5F981DD8CB120088998C /* OutTime.swift in Sources */,
+				E85B5FA61DDA507E0088998C /* LaunchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

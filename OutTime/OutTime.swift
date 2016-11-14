@@ -8,25 +8,13 @@
 
 import UIKit
 
-
-
-
-
-
-
-
 class OutTime: UIViewController {
-    
-    
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return.lightContent
     }
     
-    
-    
     @IBOutlet weak var reklamView : UIView!
-
     @IBOutlet weak var stuffSearch : UISearchBar!
     @IBOutlet weak var stuffLabel : UILabel!
     @IBOutlet weak var accImage : UIImageView!
@@ -42,10 +30,5 @@ class OutTime: UIViewController {
         
         
     }
-    
-    
-    
-    
-    
 }
 
