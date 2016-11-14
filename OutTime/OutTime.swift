@@ -8,14 +8,31 @@
 
 import UIKit
 
+
+
+
+
+
+
+
 class OutTime: UIViewController {
     
     
-    
 
+    @IBOutlet weak var stuffSearch: UISearchBar!    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
 }
+
+
+
+extension UITableView {
+    
+}
+
+

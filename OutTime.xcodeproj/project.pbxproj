@@ -12,6 +12,7 @@
 		E85B5F8C1DD8C9EC0088998C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F8A1DD8C9EC0088998C /* LaunchScreen.storyboard */; };
 		E85B5F961DD8CA2E0088998C /* OutTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F951DD8CA2E0088998C /* OutTime.storyboard */; };
 		E85B5F981DD8CB120088998C /* OutTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5F971DD8CB120088998C /* OutTime.swift */; };
+		E85B5F9A1DDA0FEE0088998C /* Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E85B5F8D1DD8C9EC0088998C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85B5F951DD8CA2E0088998C /* OutTime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OutTime.storyboard; sourceTree = "<group>"; };
 		E85B5F971DD8CB120088998C /* OutTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutTime.swift; sourceTree = "<group>"; };
+		E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Backgrounds.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E85B5F811DD8C9EC0088998C /* AppDelegate.swift */,
 				E85B5F881DD8C9EC0088998C /* Assets.xcassets */,
+				E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */,
 				E85B5F8A1DD8C9EC0088998C /* LaunchScreen.storyboard */,
 				E85B5F951DD8CA2E0088998C /* OutTime.storyboard */,
 				E85B5F971DD8CB120088998C /* OutTime.swift */,
@@ -126,6 +129,7 @@
 				E85B5F8C1DD8C9EC0088998C /* LaunchScreen.storyboard in Resources */,
 				E85B5F961DD8CA2E0088998C /* OutTime.storyboard in Resources */,
 				E85B5F891DD8C9EC0088998C /* Assets.xcassets in Resources */,
+				E85B5F9A1DDA0FEE0088998C /* Backgrounds.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +295,7 @@
 				E85B5F921DD8C9EC0088998C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
