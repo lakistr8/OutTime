@@ -96,13 +96,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTB-Sb-dEy" userLabel="down">
                                         <rect key="frame" x="0.0" y="151" width="375" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-I5-ayK">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-BK" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-I5-ayK">
                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="150"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JOr-Gl-f1f">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3751460_249px" translatesAutoresizingMaskIntoConstraints="NO" id="JOr-Gl-f1f">
                                                 <rect key="frame" x="128.5" y="0.0" width="118" height="150"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pbS-ib-TYr">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-pizza-hut_5193ba25a6ee5-p" translatesAutoresizingMaskIntoConstraints="NO" id="pbS-ib-TYr">
                                                 <rect key="frame" x="256.5" y="0.0" width="118.5" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -168,5 +168,8 @@
     </scenes>
     <resources>
         <image name="2077a50be496a2854940b3754536d1ca" width="282" height="500"/>
+        <image name="3751460_249px" width="124" height="83"/>
+        <image name="Logo-BK" width="150" height="151"/>
+        <image name="logo-pizza-hut_5193ba25a6ee5-p" width="150" height="125"/>
     </resources>
 </document>
