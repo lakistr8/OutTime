@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-858" y="341"/>
         </scene>
-        <!--View Controller-->
+        <!--Out Time-->
         <scene sceneID="SeO-DW-OOW">
             <objects>
-                <viewController id="HB3-Xp-xi0" sceneMemberID="viewController">
+                <viewController id="HB3-Xp-xi0" customClass="OutTime" customModule="OutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N6g-SL-hE9"/>
                         <viewControllerLayoutGuide type="bottom" id="oBB-4l-hw8"/>
@@ -100,6 +100,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ce0-vf-xWU"/>
+                    <connections>
+                        <outlet property="searchBar" destination="EgD-wV-Xuo" id="0XB-79-RWV"/>
+                        <outlet property="seearchView" destination="yIO-KS-79j" id="JGU-9D-LkE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1h-UK-VOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
