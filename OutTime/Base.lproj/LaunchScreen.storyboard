@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,40 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="caa533c2ed15d48b9e90b9c90e9f3df1" translatesAutoresizingMaskIntoConstraints="NO" id="Wpo-zf-fLc">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="caa533c2ed15d48b9e90b9c90e9f3df1" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-Xn-miz">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ⓒ 2016 Copyright JA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ew-en-fsX">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="J7p-1H-NzK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OutTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83c-HL-6qU">
-                                <rect key="frame" x="0.0" y="120" width="375" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Onl-X8-ht3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Wpo-zf-fLc" secondAttribute="trailing" id="1n9-F0-nTs"/>
-                            <constraint firstItem="Wpo-zf-fLc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BEZ-6l-kc9"/>
-                            <constraint firstItem="83c-HL-6qU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HaT-2X-Kks"/>
-                            <constraint firstItem="83c-HL-6qU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="LwO-Er-xzj"/>
-                            <constraint firstItem="2ew-en-fsX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="c6g-BX-OCs"/>
-                            <constraint firstAttribute="trailing" secondItem="2ew-en-fsX" secondAttribute="trailing" id="pxr-a2-7l2"/>
-                            <constraint firstItem="Wpo-zf-fLc" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="twU-VM-nw7"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Wpo-zf-fLc" secondAttribute="bottom" id="v9K-4C-IN5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="2ew-en-fsX" secondAttribute="bottom" id="xOm-jk-u3E"/>
-                            <constraint firstAttribute="trailing" secondItem="83c-HL-6qU" secondAttribute="trailing" id="zsx-T9-jjW"/>
+                            <constraint firstItem="TGt-Xn-miz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="2Ov-2e-oSR"/>
+                            <constraint firstItem="TGt-Xn-miz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="W4K-sa-eoi"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="TGt-Xn-miz" secondAttribute="bottom" id="g8f-lF-Q5L"/>
+                            <constraint firstAttribute="trailing" secondItem="TGt-Xn-miz" secondAttribute="trailing" id="pZ5-xQ-dmY"/>
                         </constraints>
                     </view>
                 </viewController>

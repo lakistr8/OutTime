@@ -89,6 +89,7 @@
                             <constraint firstAttribute="trailing" secondItem="87C-Uv-562" secondAttribute="trailing" id="1LK-G4-x61"/>
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="Cak-Gb-pPn"/>
                             <constraint firstItem="87C-Uv-562" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="IRB-7s-BRq"/>
+                            <constraint firstItem="oBB-4l-hw8" firstAttribute="top" secondItem="87C-Uv-562" secondAttribute="bottom" id="R4u-95-tzN"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lDq-s6-YZD" secondAttribute="bottom" id="VYq-U3-QKg"/>
                             <constraint firstAttribute="trailing" secondItem="lDq-s6-YZD" secondAttribute="trailing" id="a8w-bd-mnU"/>
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="height" secondItem="Lp5-z5-hrx" secondAttribute="height" id="aus-2D-lIK"/>
@@ -96,13 +97,12 @@
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="top" secondItem="Lp5-z5-hrx" secondAttribute="bottom" constant="1" id="qcA-z0-xak"/>
                             <constraint firstItem="Lp5-z5-hrx" firstAttribute="top" secondItem="N6g-SL-hE9" secondAttribute="bottom" id="vY5-79-d3B"/>
                             <constraint firstItem="87C-Uv-562" firstAttribute="top" secondItem="N6g-SL-hE9" secondAttribute="bottom" id="yFA-WP-aJu"/>
-                            <constraint firstItem="oBB-4l-hw8" firstAttribute="top" secondItem="87C-Uv-562" secondAttribute="bottom" id="z0t-Qi-g9N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ce0-vf-xWU"/>
                     <connections>
                         <outlet property="searchBar" destination="EgD-wV-Xuo" id="0XB-79-RWV"/>
-                        <outlet property="seearchView" destination="yIO-KS-79j" id="JGU-9D-LkE"/>
+                        <outlet property="searchView" destination="yIO-KS-79j" id="efP-Mq-GSa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1h-UK-VOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
