@@ -62,6 +62,20 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SZd-cv-SVW" id="Fan-ms-O5N">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-5c-nv9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="GwY-5c-nv9" firstAttribute="leading" secondItem="Fan-ms-O5N" secondAttribute="leading" id="264-yj-aNo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GwY-5c-nv9" secondAttribute="bottom" id="6EN-ia-C0b"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GwY-5c-nv9" secondAttribute="trailing" id="97X-el-AyR"/>
+                                                        <constraint firstItem="GwY-5c-nv9" firstAttribute="top" secondItem="Fan-ms-O5N" secondAttribute="top" id="egJ-eu-uXN"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
