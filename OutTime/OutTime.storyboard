@@ -14,9 +14,10 @@
         <scene sceneID="G7q-Ut-PaG">
             <objects>
                 <navigationController id="rkN-Mt-s5A" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqg-72-m4W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cqg-72-m4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="HB3-Xp-xi0" kind="relationship" relationship="rootViewController" id="Tvs-UM-7OO"/>
@@ -39,24 +40,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2077a50be496a2854940b3754536d1ca" translatesAutoresizingMaskIntoConstraints="NO" id="87C-Uv-562">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-z5-hrx" userLabel="up">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="EgD-wV-Xuo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="p7H-ef-kTh"/>
-                                        </constraints>
-                                        <color key="barTintColor" white="0.0" alpha="0.099995457848837205" colorSpace="calibratedWhite"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </searchBar>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-KS-79j">
-                                        <rect key="frame" x="0.0" y="51" width="375" height="250"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-KS-79j" customClass="ResultsView" customModule="OutTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SZd-cv-SVW">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SZd-cv-SVW" customClass="ResultsCell" customModule="OutTime" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SZd-cv-SVW" id="Fan-ms-O5N">
@@ -77,18 +70,18 @@
                                                         <constraint firstItem="GwY-5c-nv9" firstAttribute="top" secondItem="Fan-ms-O5N" secondAttribute="top" id="egJ-eu-uXN"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="resultLabel" destination="GwY-5c-nv9" id="AoU-m8-HY6"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="EgD-wV-Xuo" secondAttribute="trailing" id="DVK-lg-ail"/>
-                                    <constraint firstItem="yIO-KS-79j" firstAttribute="top" secondItem="EgD-wV-Xuo" secondAttribute="bottom" constant="1" id="Mrh-PQ-zSr"/>
-                                    <constraint firstItem="EgD-wV-Xuo" firstAttribute="top" secondItem="Lp5-z5-hrx" secondAttribute="top" id="P4I-So-gQU"/>
                                     <constraint firstAttribute="bottom" secondItem="yIO-KS-79j" secondAttribute="bottom" id="YfA-u1-nUE"/>
-                                    <constraint firstItem="EgD-wV-Xuo" firstAttribute="leading" secondItem="Lp5-z5-hrx" secondAttribute="leading" id="aqT-bC-BXs"/>
                                     <constraint firstItem="yIO-KS-79j" firstAttribute="leading" secondItem="Lp5-z5-hrx" secondAttribute="leading" id="d7q-PQ-kn7"/>
+                                    <constraint firstItem="yIO-KS-79j" firstAttribute="top" secondItem="Lp5-z5-hrx" secondAttribute="top" id="hHZ-qm-uCn"/>
                                     <constraint firstAttribute="trailing" secondItem="yIO-KS-79j" secondAttribute="trailing" id="rIN-XT-buc"/>
                                 </constraints>
                             </view>
@@ -101,6 +94,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Lp5-z5-hrx" secondAttribute="trailing" id="02P-UG-GmO"/>
                             <constraint firstAttribute="trailing" secondItem="87C-Uv-562" secondAttribute="trailing" id="1LK-G4-x61"/>
+                            <constraint firstItem="87C-Uv-562" firstAttribute="top" secondItem="vIb-OX-umk" secondAttribute="topMargin" id="1xC-Xh-M32"/>
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="Cak-Gb-pPn"/>
                             <constraint firstItem="87C-Uv-562" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="IRB-7s-BRq"/>
                             <constraint firstItem="oBB-4l-hw8" firstAttribute="top" secondItem="87C-Uv-562" secondAttribute="bottom" id="R4u-95-tzN"/>
@@ -110,12 +104,10 @@
                             <constraint firstItem="Lp5-z5-hrx" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="h6S-Sb-LvW"/>
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="top" secondItem="Lp5-z5-hrx" secondAttribute="bottom" constant="1" id="qcA-z0-xak"/>
                             <constraint firstItem="Lp5-z5-hrx" firstAttribute="top" secondItem="N6g-SL-hE9" secondAttribute="bottom" id="vY5-79-d3B"/>
-                            <constraint firstItem="87C-Uv-562" firstAttribute="top" secondItem="N6g-SL-hE9" secondAttribute="bottom" id="yFA-WP-aJu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ce0-vf-xWU"/>
                     <connections>
-                        <outlet property="searchBar" destination="EgD-wV-Xuo" id="0XB-79-RWV"/>
                         <outlet property="searchView" destination="yIO-KS-79j" id="efP-Mq-GSa"/>
                     </connections>
                 </viewController>
