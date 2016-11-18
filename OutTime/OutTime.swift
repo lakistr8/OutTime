@@ -8,8 +8,10 @@
 
 import UIKit
 import MapKit
+import WebKit
 
-class OutTime: UIViewController {
+class OutTime: UIViewController, UISearchControllerDelegate {
+    
     
     var searchText : String?
     var searchController : UISearchController!
@@ -27,19 +29,11 @@ class OutTime: UIViewController {
     }
 }
 
-
-
-
-
-
 typealias Internal = OutTime
 extension Internal {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         
         searchView.backgroundColor = UIColor.clear
         //poziv za search bar u navigaton item-u
@@ -49,6 +43,7 @@ extension Internal {
         //poziv za prikazivanje odredjene tacke na osnovu kordinata i teksta unosa
         maps.addAnnotation(artWork)
         maps.delegate = self
+        
     }
 }
 
@@ -57,7 +52,6 @@ extension OutTime  {
     func setSearch() {
         searchController = {
            let sc = UISearchController(searchResultsController: nil)
-            
             
             sc.hidesNavigationBarDuringPresentation = false
             sc.dimsBackgroundDuringPresentation = false
@@ -69,10 +63,14 @@ extension OutTime  {
             return sc
         }()
     }
-    
     func updateSearchResult(for searchControler: UISearchController) {
+        let url = NSURL(string: "http://google.com/search?q=")!
+        let req = NSURLRequest(url: url as URL)
+
         self.searchText = searchControler.searchBar.text
         self.searchView.reloadData()
+        self.searchController.delegate = self
+
     }
 }
 
