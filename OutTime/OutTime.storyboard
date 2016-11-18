@@ -39,8 +39,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2077a50be496a2854940b3754536d1ca" translatesAutoresizingMaskIntoConstraints="NO" id="87C-Uv-562">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2077a50be496a2854940b3754536d1ca" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-8d-Jn7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="366"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-z5-hrx" userLabel="up">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301"/>
@@ -104,11 +104,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Lp5-z5-hrx" secondAttribute="trailing" id="02P-UG-GmO"/>
-                            <constraint firstAttribute="trailing" secondItem="87C-Uv-562" secondAttribute="trailing" id="1LK-G4-x61"/>
-                            <constraint firstItem="87C-Uv-562" firstAttribute="top" secondItem="vIb-OX-umk" secondAttribute="topMargin" id="1xC-Xh-M32"/>
+                            <constraint firstItem="dDR-8d-Jn7" firstAttribute="top" secondItem="vIb-OX-umk" secondAttribute="topMargin" id="2Lv-5c-uqL"/>
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="Cak-Gb-pPn"/>
-                            <constraint firstItem="87C-Uv-562" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="IRB-7s-BRq"/>
-                            <constraint firstItem="oBB-4l-hw8" firstAttribute="top" secondItem="87C-Uv-562" secondAttribute="bottom" id="R4u-95-tzN"/>
+                            <constraint firstItem="lDq-s6-YZD" firstAttribute="top" secondItem="dDR-8d-Jn7" secondAttribute="bottom" id="CjA-Le-trb"/>
+                            <constraint firstItem="dDR-8d-Jn7" firstAttribute="leading" secondItem="vIb-OX-umk" secondAttribute="leading" id="F9c-wz-tnJ"/>
+                            <constraint firstAttribute="trailing" secondItem="dDR-8d-Jn7" secondAttribute="trailing" id="RzN-vI-VSb"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lDq-s6-YZD" secondAttribute="bottom" id="VYq-U3-QKg"/>
                             <constraint firstAttribute="trailing" secondItem="lDq-s6-YZD" secondAttribute="trailing" id="a8w-bd-mnU"/>
                             <constraint firstItem="lDq-s6-YZD" firstAttribute="height" secondItem="Lp5-z5-hrx" secondAttribute="height" id="aus-2D-lIK"/>
