@@ -14,9 +14,18 @@ class OutTime: UIViewController {
     var searchText : String?
     var searchController : UISearchController!
     @IBOutlet weak var searchView : UITableView!
-    @IBOutlet weak var maps: MKMapView!
-    
+    @IBOutlet fileprivate weak var maps: MKMapView!
+    //kordinate beograda
+    let initialLocation = CLLocation(latitude: 44.816088, longitude: 20.459962)
+    let regionRadius: CLLocationDistance = 1000
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        maps.setRegion(coordinateRegion, animated: true)
+    }
 }
+
+
 
 
 typealias Internal = OutTime
@@ -25,9 +34,13 @@ extension Internal {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        
+        maps.backgroundColor = UIColor.clear
         searchView.backgroundColor = UIColor.clear
         setSearch()
-        
+        centerMapOnLocation(location: initialLocation)
     }
 }
 
@@ -54,3 +67,16 @@ extension OutTime  {
         self.searchView.reloadData()
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
