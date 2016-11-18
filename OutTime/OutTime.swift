@@ -28,6 +28,8 @@ class OutTime: UIViewController {
 
 
 
+
+
 typealias Internal = OutTime
 extension Internal {
     
@@ -41,6 +43,7 @@ extension Internal {
         searchView.backgroundColor = UIColor.clear
         setSearch()
         centerMapOnLocation(location: initialLocation)
+        maps.delegate = self
     }
 }
 
@@ -67,6 +70,7 @@ extension OutTime  {
         self.searchView.reloadData()
     }
 }
+
 
 
 
