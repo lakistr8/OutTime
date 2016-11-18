@@ -12,6 +12,7 @@ import MapKit
 //napravio sam posebnu klasu i pomocu nje cu imati pocetnu tacku sa centrom na osnovu kordinata i tokom klika na nju ispisace se svi detalji te tacke!
 class ArtWork : NSObject, MKAnnotation {
     
+    //mora title da se primeni zbog protokola
     let title : String?
     let locationName : String
     let discipline : String
@@ -26,7 +27,7 @@ class ArtWork : NSObject, MKAnnotation {
         super.init()
         
     }
-    
+    //mora da se primeni zbog prokola
     var subtitle : String? {
         return locationName
     }
