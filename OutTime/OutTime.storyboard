@@ -87,7 +87,18 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-s6-YZD" userLabel="down">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-LT-Hml">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                                    </mapView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="T9H-LT-Hml" secondAttribute="bottom" id="0tE-5X-sbU"/>
+                                    <constraint firstItem="T9H-LT-Hml" firstAttribute="top" secondItem="lDq-s6-YZD" secondAttribute="top" id="DJB-ZP-bhM"/>
+                                    <constraint firstItem="T9H-LT-Hml" firstAttribute="leading" secondItem="lDq-s6-YZD" secondAttribute="leading" id="bbq-A4-bIS"/>
+                                    <constraint firstAttribute="trailing" secondItem="T9H-LT-Hml" secondAttribute="trailing" id="xNF-q8-bBz"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,6 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ce0-vf-xWU"/>
                     <connections>
+                        <outlet property="maps" destination="T9H-LT-Hml" id="4RN-3b-MGp"/>
                         <outlet property="searchView" destination="yIO-KS-79j" id="efP-Mq-GSa"/>
                     </connections>
                 </viewController>

@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import Foundation
+import MapKit
 
 class OutTime: UIViewController {
     
     var searchText : String?
     var searchController : UISearchController!
     @IBOutlet weak var searchView : UITableView!
+    @IBOutlet weak var maps: MKMapView!
     
 }
 
