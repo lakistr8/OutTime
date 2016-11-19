@@ -12,7 +12,7 @@ import WebKit
 
 class OutTime: UIViewController, UISearchControllerDelegate {
     
-    
+
     var searchText : String?
     var searchController : UISearchController!
     @IBOutlet weak var searchView : UITableView!
@@ -27,6 +27,10 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         //set region govori mapi da nacrta odredjenu lokaciju na osnovu kordinata koje upisujemo kao parametar func!
         maps.setRegion(coordinateRegion, animated: true)
     }
+    
+   
+    
+    
 }
 
 typealias Internal = OutTime
@@ -34,6 +38,8 @@ extension Internal {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         searchView.backgroundColor = UIColor.clear
         //poziv za search bar u navigaton item-u
@@ -74,7 +80,26 @@ extension OutTime  {
     }
 }
 
-
+//extension OutTime {
+//    //metod za soptvenu lokaciju!
+//
+//    func checkLocation() {
+//        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+//            maps.showsUserLocation = true
+//        } else {
+//            locattionManager.requestWhenInUseAuthorization()
+//        }
+//    }
+//
+//    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        //metod za sopstvenu lokaciju
+//        checkLocation()
+//    }
+//    
+//    
+//}
 
 
 
