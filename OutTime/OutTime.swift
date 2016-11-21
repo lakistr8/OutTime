@@ -12,7 +12,7 @@ import WebKit
 
 class OutTime: UIViewController, UISearchControllerDelegate {
     
-
+    var localeManager = CLLocationManager()
     var searchText : String?
     var searchController : UISearchController!
     @IBOutlet weak var searchView : UITableView!
@@ -40,6 +40,7 @@ extension Internal {
         super.viewDidLoad()
         
         
+        //checkLocation()
         
         searchView.backgroundColor = UIColor.clear
         //poziv za search bar u navigaton item-u
@@ -53,11 +54,12 @@ extension Internal {
     }
 }
 
-extension OutTime  {
+extension OutTime : UISearchResultsUpdating {
     
     func setSearch() {
         searchController = {
            let sc = UISearchController(searchResultsController: nil)
+            sc.searchResultsUpdater = self
             
             sc.hidesNavigationBarDuringPresentation = false
             sc.dimsBackgroundDuringPresentation = false
@@ -69,7 +71,7 @@ extension OutTime  {
             return sc
         }()
     }
-    func updateSearchResult(for searchControler: UISearchController) {
+    func updateSearchResults (for searchControler: UISearchController) {
         let url = NSURL(string: "http://google.com/search?q=")!
         let req = NSURLRequest(url: url as URL)
 
@@ -87,17 +89,17 @@ extension OutTime  {
 //        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
 //            maps.showsUserLocation = true
 //        } else {
-//            locattionManager.requestWhenInUseAuthorization()
+//            localeManager.requestWhenInUseAuthorization()
 //        }
 //    }
 //
 //    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        //metod za sopstvenu lokaciju
-//        checkLocation()
-//    }
-//    
+////    override func viewDidAppear(_ animated: Bool) {
+////        super.viewDidAppear(animated)
+////        //metod za sopstvenu lokaciju
+////        checkLocation()
+////    }
+////    
 //    
 //}
 

@@ -14,7 +14,7 @@
         <scene sceneID="G7q-Ut-PaG">
             <objects>
                 <navigationController id="rkN-Mt-s5A" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cqg-72-m4W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqg-72-m4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -88,7 +88,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-s6-YZD" userLabel="down">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-LT-Hml">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-LT-Hml">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
                                     </mapView>
                                 </subviews>

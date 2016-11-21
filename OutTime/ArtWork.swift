@@ -8,6 +8,7 @@
 
 import Foundation
 import MapKit
+import AddressBook
 
 //napravio sam posebnu klasu i pomocu nje cu imati pocetnu tacku sa centrom na osnovu kordinata i tokom klika na nju ispisace se svi detalji te tacke!
 class ArtWork : NSObject, MKAnnotation {
@@ -59,4 +60,5 @@ extension OutTime : MKMapViewDelegate {
         }
         return nil
     }
+    
 }
