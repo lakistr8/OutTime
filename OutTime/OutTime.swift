@@ -27,19 +27,15 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         //set region govori mapi da nacrta odredjenu lokaciju na osnovu kordinata koje upisujemo kao parametar func!
         maps.setRegion(coordinateRegion, animated: true)
     }
-    
-   
-    
-    
 }
+
 
 typealias Internal = OutTime
 extension Internal {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+                
         //checkLocation()
         
         searchView.backgroundColor = UIColor.clear
@@ -79,6 +75,22 @@ extension OutTime : UISearchResultsUpdating {
 }
 
 
+extension OutTime {
+    //metod za soptvenu lokaciju!
+    
+    func checkLocation() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            maps.showsUserLocation = true
+        } else {
+            localeManager.requestWhenInUseAuthorization()
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //metod za sopstvenu lokaciju
+        checkLocation()
+    }
+}
 
 
 
