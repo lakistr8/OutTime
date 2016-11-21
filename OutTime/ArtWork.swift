@@ -60,5 +60,27 @@ extension OutTime : MKMapViewDelegate {
         }
         return nil
     }
-    
 }
+
+
+extension OutTime {
+    //metod za soptvenu lokaciju!
+
+    func checkLocation() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            maps.showsUserLocation = true
+        } else {
+            localeManager.requestWhenInUseAuthorization()
+        }
+    }
+
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //metod za sopstvenu lokaciju
+        checkLocation()
+    }
+
+
+}
+

@@ -16,7 +16,7 @@ class OutTime: UIViewController, UISearchControllerDelegate {
     var searchText : String?
     var searchController : UISearchController!
     @IBOutlet weak var searchView : UITableView!
-    @IBOutlet fileprivate weak var maps: MKMapView!
+    @IBOutlet weak var maps: MKMapView!
     //kordinate beograda dao sam geografsku sirinu i duzinu da bi mapa mogla da iscrta
     let initialLocation = CLLocation(latitude: 44.816088, longitude: 20.459962)
     //Locale je argument centralne tacke, region ce ima imati sever-jug i istog-zapad raspon od radiusa, zato radius podesavamo na 1000 metara i onda koristimo region radus na *2 jer je dobar sa unosom podataka na javnom atwork u jSon file.
@@ -72,36 +72,12 @@ extension OutTime : UISearchResultsUpdating {
         }()
     }
     func updateSearchResults (for searchControler: UISearchController) {
-        let url = NSURL(string: "http://google.com/search?q=")!
-        let req = NSURLRequest(url: url as URL)
-
         self.searchText = searchControler.searchBar.text
         self.searchView.reloadData()
         self.searchController.delegate = self
-
     }
 }
 
-//extension OutTime {
-//    //metod za soptvenu lokaciju!
-//
-//    func checkLocation() {
-//        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-//            maps.showsUserLocation = true
-//        } else {
-//            localeManager.requestWhenInUseAuthorization()
-//        }
-//    }
-//
-//    
-////    override func viewDidAppear(_ animated: Bool) {
-////        super.viewDidAppear(animated)
-////        //metod za sopstvenu lokaciju
-////        checkLocation()
-////    }
-////    
-//    
-//}
 
 
 
