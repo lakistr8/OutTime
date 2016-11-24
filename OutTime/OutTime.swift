@@ -12,6 +12,8 @@ import WebKit
 
 class OutTime: UIViewController, UISearchControllerDelegate {
     
+    
+    
     var localeManager = CLLocationManager()
     var searchText : String?
     var searchController : UISearchController!
@@ -27,6 +29,23 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         //set region govori mapi da nacrta odredjenu lokaciju na osnovu kordinata koje upisujemo kao parametar func!
         maps.setRegion(coordinateRegion, animated: true)
     }
+    
+    let url = "https://www.google.rs/?gws_rd=cr&ei=LNc2WP2XM8P8sQGBgLj4BQ"
+    
+    func updateSearchToGoogle(to someString: String) -> URL {
+        var s = url
+        
+        var niz:[String] = []
+        if someString == searchText {
+            niz.append("#q=" + searchText! + someString)
+        }
+        
+        s += niz.joined()
+        
+        return URL(string: s)!
+    }
+    
+    
 }
 
 
@@ -50,10 +69,13 @@ extension Internal {
     }
 }
 
+
+
 extension OutTime : UISearchResultsUpdating {
     
     func setSearch() {
         searchController = {
+            
            let sc = UISearchController(searchResultsController: nil)
             sc.searchResultsUpdater = self
             
@@ -68,6 +90,7 @@ extension OutTime : UISearchResultsUpdating {
         }()
     }
     func updateSearchResults (for searchControler: UISearchController) {
+        
         self.searchText = searchControler.searchBar.text
         self.searchView.reloadData()
         self.searchController.delegate = self
@@ -85,20 +108,9 @@ extension OutTime {
             localeManager.requestWhenInUseAuthorization()
         }
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         //metod za sopstvenu lokaciju
         checkLocation()
     }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -88,7 +88,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-s6-YZD" userLabel="down">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
                                 <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-LT-Hml">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-LT-Hml">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
                                     </mapView>
                                 </subviews>
