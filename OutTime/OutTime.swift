@@ -10,9 +10,15 @@ import UIKit
 import MapKit
 import WebKit
 
+enum Errors : Error {
+    case invalidResponse
+    case networkError(NSError?)
+    case locationIsNotIncluded(String)
+}
+
+
+
 class OutTime: UIViewController, UISearchControllerDelegate {
-    
-    
     
     var localeManager = CLLocationManager()
     var searchText : String?
@@ -30,9 +36,9 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         maps.setRegion(coordinateRegion, animated: true)
     }
     
-    let url = "https://www.google.rs/?gws_rd=cr&ei=LNc2WP2XM8P8sQGBgLj4BQ"
+    let url = "https://www.google.rs/?gws_rd=cr,ssl&ei="
     // metod za kreiranja url!
-    func updateSearchToGoogle(to someString: String) -> URL {
+    func updateSearchTextToGoogle(to someString: String) -> URL {
         var s = url
         
         var niz:[String] = []
@@ -53,8 +59,6 @@ extension Internal {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        //checkLocation()
-        
         searchView.backgroundColor = UIColor.clear
         //poziv za search bar u navigaton item-u
         setSearch()
@@ -95,6 +99,50 @@ extension OutTime : UISearchResultsUpdating {
     }
 }
 
+extension OutTime {
+    
+    func updateSearchBarToNetwork(for searchBar:UISearchController,
+                                  completionHandler: @escaping (Double? , Errors?) -> Void ) {
+        
+        let url = updateSearchTextToGoogle(to: searchText!)
+        let task = URLSession.shared.dataTask(with: url) {
+            data, urlResponse, error in
+            
+//            if let error == error {
+//                completionHandler(nil, Errors.networkError(error as NSError?))
+//                return
+//            }
+//            
+//            guard let httpURLResponse = urlResponse as? HTTPURLResponse else {
+//                completionHandler(nil, Errors.invalidResponse)
+//                return
+//            }
+//            
+//            if httpURLResponse.statusCode != 200 {
+//                completionHandler(nil, Errors.invalidResponse)
+//                return
+//            }
+//            
+//            guard let data = data else {
+//                completionHandler(nil, Errors.invalidResponse)
+//                return
+//            }
+//            
+//            guard let result = String(data: data, encoding: .utf8) else {
+//                completionHandler(nil, Errors.invalidResponse)
+//                return
+//            }
+//            
+//            guard result.characters.count > 0 else {
+//                completionHandler(nil, Errors.invalidResponse)
+//                return
+//            }
+//            
+//            let lines = result.components(separatedBy: "")
+        }
+//      task.resume()
+    }
+}
 
 extension OutTime {
     //metod za soptvenu lokaciju!
