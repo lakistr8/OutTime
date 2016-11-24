@@ -31,7 +31,7 @@ class OutTime: UIViewController, UISearchControllerDelegate {
     }
     
     let url = "https://www.google.rs/?gws_rd=cr&ei=LNc2WP2XM8P8sQGBgLj4BQ"
-    
+    // metod za kreiranja url!
     func updateSearchToGoogle(to someString: String) -> URL {
         var s = url
         
@@ -44,8 +44,6 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         
         return URL(string: s)!
     }
-    
-    
 }
 
 
