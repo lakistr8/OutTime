@@ -36,14 +36,14 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         maps.setRegion(coordinateRegion, animated: true)
     }
     
-    let url = "https://www.google.rs/?gws_rd=cr,ssl&ei="
+    let url = "https://http://www.bing.com/search?"
     // metod za kreiranja url!
     func updateSearchTextToGoogle(to someString: String) -> URL {
         var s = url
         
         var niz:[String] = []
         if someString == searchText {
-            niz.append("#q=" + searchText! + someString)
+            niz.append("q=" + searchText! + someString)
         }
         
         s += niz.joined()
@@ -65,7 +65,7 @@ extension Internal {
         //poziv za centralnu tacku u mapi!
         centerMapOnLocation(location: initialLocation)
         //poziv za prikazivanje odredjene tacke na osnovu kordinata i teksta unosa
-        maps.addAnnotation(artWork)
+        maps.addAnnotations([artWork, boutique, nationalTheatre])
         maps.delegate = self
         
     }
@@ -108,39 +108,39 @@ extension OutTime {
         let task = URLSession.shared.dataTask(with: url) {
             data, urlResponse, error in
             
-//            if let error == error {
-//                completionHandler(nil, Errors.networkError(error as NSError?))
-//                return
-//            }
-//            
-//            guard let httpURLResponse = urlResponse as? HTTPURLResponse else {
-//                completionHandler(nil, Errors.invalidResponse)
-//                return
-//            }
-//            
-//            if httpURLResponse.statusCode != 200 {
-//                completionHandler(nil, Errors.invalidResponse)
-//                return
-//            }
-//            
-//            guard let data = data else {
-//                completionHandler(nil, Errors.invalidResponse)
-//                return
-//            }
-//            
-//            guard let result = String(data: data, encoding: .utf8) else {
-//                completionHandler(nil, Errors.invalidResponse)
-//                return
-//            }
-//            
-//            guard result.characters.count > 0 else {
-//                completionHandler(nil, Errors.invalidResponse)
-//                return
-//            }
-//            
-//            let lines = result.components(separatedBy: "")
+            if let error = error {
+                completionHandler(nil, Errors.networkError(error as NSError?))
+                return
+            }
+
+            guard let httpURLResponse = urlResponse as? HTTPURLResponse else {
+                completionHandler(nil, Errors.invalidResponse)
+                return
+            }
+            
+            if httpURLResponse.statusCode != 200 {
+                completionHandler(nil, Errors.invalidResponse)
+                return
+            }
+            
+            guard let data = data else {
+                completionHandler(nil, Errors.invalidResponse)
+                return
+            }
+            
+            guard let result = String(data: data, encoding: .utf8) else {
+                completionHandler(nil, Errors.invalidResponse)
+                return
+            }
+            
+            guard result.characters.count > 0 else {
+                completionHandler(nil, Errors.invalidResponse)
+                return
+            }
+            
+            let lines = result.components(separatedBy: "")
         }
-//      task.resume()
+      task.resume()
     }
 }
 
