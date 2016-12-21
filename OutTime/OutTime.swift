@@ -160,3 +160,30 @@ extension OutTime {
         checkLocation()
     }
 }
+
+
+extension OutTime: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        let arts = [artWork, boutique, nationalTheatre]
+        
+        return arts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArtWorkCell")
+        
+        return cell!
+    }
+    
+}
+
+
+
+
