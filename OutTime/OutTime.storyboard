@@ -71,7 +71,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="resultLabel" destination="GwY-5c-nv9" id="AoU-m8-HY6"/>
+                                                    <outlet property="artWorksLabel" destination="GwY-5c-nv9" id="Nk0-Jx-P2S"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

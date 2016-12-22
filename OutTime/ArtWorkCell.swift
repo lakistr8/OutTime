@@ -9,16 +9,24 @@
 import UIKit
 
 class ArtWorkCell: UITableViewCell {
+    
+    @IBOutlet weak var artWorksLabel : UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+}
 
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-
+extension ArtWorkCell {
+    
+    func cofigure(_ artworks: [ArtWork]) {
+        
+        let work = [ArtWork]()
+        
+        artWorksLabel.text = String(work.count)
+        
+        
+    }
+    
 }

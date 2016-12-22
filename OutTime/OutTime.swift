@@ -177,9 +177,14 @@ extension OutTime: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArtWorkCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ArtWorkCell") as! ArtWorkCell
         
-        return cell!
+        let arts = [artWork, boutique, nationalTheatre]
+        
+        cell.cofigure(arts)
+        
+        
+        return cell
     }
     
 }
