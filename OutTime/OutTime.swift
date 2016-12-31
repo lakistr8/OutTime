@@ -20,10 +20,11 @@ enum Errors : Error {
 
 class OutTime: UIViewController, UISearchControllerDelegate {
     
+    
+    let arts = [ArtWork]()
     var localeManager = CLLocationManager()
     var searchText : String?
     var searchController : UISearchController!
-    @IBOutlet weak var searchView : UITableView!
     @IBOutlet weak var maps: MKMapView!
     //kordinate beograda dao sam geografsku sirinu i duzinu da bi mapa mogla da iscrta
     let initialLocation = CLLocation(latitude: 44.816088, longitude: 20.459962)
@@ -59,7 +60,7 @@ extension Internal {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        searchView.backgroundColor = UIColor.clear
+        
         //poziv za search bar u navigaton item-u
         setSearch()
         //poziv za centralnu tacku u mapi!
@@ -94,8 +95,8 @@ extension OutTime : UISearchResultsUpdating {
     func updateSearchResults (for searchControler: UISearchController) {
         
         self.searchText = searchControler.searchBar.text
-        self.searchView.reloadData()
-        self.searchController.delegate = self
+//        self.tableView.reloadData()
+        
     }
 }
 
@@ -138,7 +139,7 @@ extension OutTime {
                 return
             }
             
-            let lines = result.components(separatedBy: "")
+//            let lines = result.components(separatedBy: "")
         }
       task.resume()
     }
@@ -169,9 +170,6 @@ extension OutTime: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        let arts = [artWork, boutique, nationalTheatre]
-        
         return arts.count
     }
     
@@ -179,15 +177,15 @@ extension OutTime: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArtWorkCell") as! ArtWorkCell
         
-        let arts = [artWork, boutique, nationalTheatre]
+        let art = arts[indexPath.row]
         
-        cell.cofigure(arts)
-        
+        cell.artWorksLabel.text = art.title
         
         return cell
     }
     
 }
+
 
 
 

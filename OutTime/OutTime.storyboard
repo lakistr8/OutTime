@@ -47,7 +47,7 @@
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-KS-79j">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArtWorkCell" id="SZd-cv-SVW" customClass="ArtWorkCell" customModule="OutTime" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -127,7 +127,6 @@
                     <navigationItem key="navigationItem" id="ce0-vf-xWU"/>
                     <connections>
                         <outlet property="maps" destination="T9H-LT-Hml" id="4RN-3b-MGp"/>
-                        <outlet property="searchView" destination="yIO-KS-79j" id="efP-Mq-GSa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1h-UK-VOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
