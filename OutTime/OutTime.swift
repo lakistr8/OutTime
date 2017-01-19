@@ -21,7 +21,7 @@ enum Errors : Error {
 class OutTime: UIViewController, UISearchControllerDelegate {
     
     
-    let arts = [ArtWork]()
+    var arts = [ArtWork]()
     var localeManager = CLLocationManager()
     var searchText : String?
     var searchController : UISearchController!
@@ -60,7 +60,7 @@ extension Internal {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        
+        loadArtWorks()
         //poziv za search bar u navigaton item-u
         setSearch()
         //poziv za centralnu tacku u mapi!
