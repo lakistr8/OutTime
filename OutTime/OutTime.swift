@@ -162,6 +162,18 @@ extension OutTime {
     }
 }
 
+extension OutTime {
+    
+    func loadArtWorks() {
+        let artWork = ArtWork(title: "Republic Square", locationName: "Belgrade Center", discipline: "Sculpture", coordinate: CLLocationCoordinate2D(latitude: 44.816088, longitude: 20.459962))
+        let boutique = ArtWork(title: "Boutique", locationName: "Belgrade Center", discipline: "Caffe Restoraunt ", coordinate: CLLocationCoordinate2D(latitude: 44.816158, longitude: 20.459794))
+        let nationalTheatre = ArtWork(title: "National Theatre", locationName: "Belgrade Center", discipline: "Theatre", coordinate: CLLocationCoordinate2D(latitude: 44.817018, longitude: 20.461017))
+        
+        arts += [artWork, boutique, nationalTheatre]
+    }
+    
+}
+
 
 extension OutTime: UITableViewDataSource {
     
