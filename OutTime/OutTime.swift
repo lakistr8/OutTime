@@ -100,50 +100,6 @@ extension Internal {
 //    }
 //}
 
-extension OutTime {
-    
-    func updateSearchBarToNetwork(for searchBar:UISearchController,
-                                  completionHandler: @escaping (Double? , Errors?) -> Void ) {
-        
-        let url = updateSearchTextToGoogle(to: searchText!)
-        let task = URLSession.shared.dataTask(with: url) {
-            data, urlResponse, error in
-            
-            if let error = error {
-                completionHandler(nil, Errors.networkError(error as NSError?))
-                return
-            }
-
-            guard let httpURLResponse = urlResponse as? HTTPURLResponse else {
-                completionHandler(nil, Errors.invalidResponse)
-                return
-            }
-            
-            if httpURLResponse.statusCode != 200 {
-                completionHandler(nil, Errors.invalidResponse)
-                return
-            }
-            
-            guard let data = data else {
-                completionHandler(nil, Errors.invalidResponse)
-                return
-            }
-            
-            guard let result = String(data: data, encoding: .utf8) else {
-                completionHandler(nil, Errors.invalidResponse)
-                return
-            }
-            
-            guard result.characters.count > 0 else {
-                completionHandler(nil, Errors.invalidResponse)
-                return
-            }
-            
-//            let lines = result.components(separatedBy: "")
-        }
-      task.resume()
-    }
-}
 
 extension OutTime {
     //metod za soptvenu lokaciju!
