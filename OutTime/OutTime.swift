@@ -37,20 +37,20 @@ class OutTime: UIViewController, UISearchControllerDelegate {
         maps.setRegion(coordinateRegion, animated: true)
     }
     
-    let url = "https://http://www.bing.com/search?"
-    // metod za kreiranja url!
-    func updateSearchTextToGoogle(to someString: String) -> URL {
-        var s = url
-        
-        var niz:[String] = []
-        if someString == searchText {
-            niz.append("q=" + searchText! + someString)
-        }
-        
-        s += niz.joined()
-        
-        return URL(string: s)!
-    }
+//    let url = "https://http://www.bing.com/search?"
+//    // metod za kreiranja url!
+//    func updateSearchTextToGoogle(to someString: String) -> URL {
+//        var s = url
+//        
+//        var niz:[String] = []
+//        if someString == searchText {
+//            niz.append("q=" + searchText! + someString)
+//        }
+//        
+//        s += niz.joined()
+//        
+//        return URL(string: s)!
+//    }
 }
 
 
