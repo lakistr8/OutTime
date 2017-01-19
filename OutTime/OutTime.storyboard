@@ -14,10 +14,14 @@
         <scene sceneID="G7q-Ut-PaG">
             <objects>
                 <navigationController id="rkN-Mt-s5A" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqg-72-m4W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cqg-72-m4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.24581749059881619" blue="0.031046023588526483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="HB3-Xp-xi0" kind="relationship" relationship="rootViewController" id="Tvs-UM-7OO"/>
@@ -27,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="-858" y="341"/>
         </scene>
-        <!--Out Time-->
+        <!--OutTime-->
         <scene sceneID="SeO-DW-OOW">
             <objects>
                 <viewController id="HB3-Xp-xi0" customClass="OutTime" customModule="OutTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,7 +128,7 @@
                             <constraint firstItem="Lp5-z5-hrx" firstAttribute="top" secondItem="N6g-SL-hE9" secondAttribute="bottom" id="vY5-79-d3B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ce0-vf-xWU"/>
+                    <navigationItem key="navigationItem" title="OutTime" id="ce0-vf-xWU"/>
                     <connections>
                         <outlet property="maps" destination="T9H-LT-Hml" id="4RN-3b-MGp"/>
                     </connections>
