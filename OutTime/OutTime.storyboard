@@ -62,13 +62,13 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moo-RX-tNZ" userLabel="contenView">
-                                                            <rect key="frame" x="0.0" y="0.0" width="141" height="148"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-u8-9H4">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="148"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-ea-12v">
-                                                                    <rect key="frame" x="0.0" y="113" width="141" height="35"/>
+                                                                    <rect key="frame" x="0.0" y="15" width="50" height="35"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="ltE-Ef-OTh"/>
                                                                     </constraints>
@@ -77,7 +77,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="dpd-u8-9H4" firstAttribute="leading" secondItem="Moo-RX-tNZ" secondAttribute="leading" id="FDO-xl-Xwd"/>
                                                                 <constraint firstAttribute="trailing" secondItem="BZ4-ea-12v" secondAttribute="trailing" id="JI4-FM-Mm6"/>
