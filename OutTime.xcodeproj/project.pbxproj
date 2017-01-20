@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E81599A71DDF17C7006D06CE /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81599A61DDF17C7006D06CE /* ArtWork.swift */; };
-		E823DAFB1E0AB6C6006DE0EA /* ArtWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823DAFA1E0AB6C6006DE0EA /* ArtWorkCell.swift */; };
 		E85B5F821DD8C9EC0088998C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5F811DD8C9EC0088998C /* AppDelegate.swift */; };
 		E85B5F891DD8C9EC0088998C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F881DD8C9EC0088998C /* Assets.xcassets */; };
 		E85B5F8C1DD8C9EC0088998C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85B5F8A1DD8C9EC0088998C /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		E81599A61DDF17C7006D06CE /* ArtWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
-		E823DAFA1E0AB6C6006DE0EA /* ArtWorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtWorkCell.swift; sourceTree = "<group>"; };
 		E85B5F7E1DD8C9EC0088998C /* OutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85B5F811DD8C9EC0088998C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E85B5F881DD8C9EC0088998C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				E86A93651E32465400F8298C /* GridLayout.swift */,
 				E8C9E0E11DDC6D870078CC66 /* OutTime.swift */,
 				E86A93631E32440400F8298C /* ArtWorkItems.swift */,
-				E823DAFA1E0AB6C6006DE0EA /* ArtWorkCell.swift */,
 				E81599A61DDF17C7006D06CE /* ArtWork.swift */,
 				E85B5F8D1DD8C9EC0088998C /* Info.plist */,
 			);
@@ -154,7 +151,6 @@
 			files = (
 				E85B5F821DD8C9EC0088998C /* AppDelegate.swift in Sources */,
 				E81599A71DDF17C7006D06CE /* ArtWork.swift in Sources */,
-				E823DAFB1E0AB6C6006DE0EA /* ArtWorkCell.swift in Sources */,
 				E86A93661E32465400F8298C /* GridLayout.swift in Sources */,
 				E86A93641E32440400F8298C /* ArtWorkItems.swift in Sources */,
 				E8C9E0E21DDC6D870078CC66 /* OutTime.swift in Sources */,
