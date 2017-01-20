@@ -172,6 +172,9 @@ extension OutTime: UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtWorkItems",
                                                       for: indexPath) as! ArtWorkItems
+        let art = arts[indexPath.row]
+        
+        cell.artWorkName.text = art.title
         
         
         return cell
