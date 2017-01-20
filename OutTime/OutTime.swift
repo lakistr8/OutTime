@@ -131,29 +131,6 @@ extension OutTime {
 }
 
 
-extension OutTime: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arts.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ArtWorkCell") as! ArtWorkCell
-        
-        let art = arts[indexPath.row]
-        
-        cell.artWorksLabel.text = art.title
-        
-        return cell
-    }
-    
-}
-
 extension OutTime: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
