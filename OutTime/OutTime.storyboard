@@ -48,53 +48,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-z5-hrx" userLabel="up">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-KS-79j">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArtWorkCell" id="SZd-cv-SVW" customClass="ArtWorkCell" customModule="OutTime" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SZd-cv-SVW" id="Fan-ms-O5N">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-5c-nv9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="1" green="0.24581749059881619" blue="0.031046023588526483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="GwY-5c-nv9" firstAttribute="leading" secondItem="Fan-ms-O5N" secondAttribute="leading" id="264-yj-aNo"/>
-                                                        <constraint firstAttribute="bottom" secondItem="GwY-5c-nv9" secondAttribute="bottom" id="6EN-ia-C0b"/>
-                                                        <constraint firstAttribute="trailing" secondItem="GwY-5c-nv9" secondAttribute="trailing" id="97X-el-AyR"/>
-                                                        <constraint firstItem="GwY-5c-nv9" firstAttribute="top" secondItem="Fan-ms-O5N" secondAttribute="top" id="egJ-eu-uXN"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <connections>
-                                                    <outlet property="artWorksLabel" destination="GwY-5c-nv9" id="Nk0-Jx-P2S"/>
-                                                </connections>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="HB3-Xp-xi0" id="Yea-V6-TRC"/>
-                                            <outlet property="delegate" destination="HB3-Xp-xi0" id="6m9-Xi-lgB"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="yIO-KS-79j" secondAttribute="bottom" id="YfA-u1-nUE"/>
-                                    <constraint firstItem="yIO-KS-79j" firstAttribute="leading" secondItem="Lp5-z5-hrx" secondAttribute="leading" id="d7q-PQ-kn7"/>
-                                    <constraint firstItem="yIO-KS-79j" firstAttribute="top" secondItem="Lp5-z5-hrx" secondAttribute="top" id="hHZ-qm-uCn"/>
-                                    <constraint firstAttribute="trailing" secondItem="yIO-KS-79j" secondAttribute="trailing" id="rIN-XT-buc"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-s6-YZD" userLabel="down">
                                 <rect key="frame" x="0.0" y="366" width="375" height="301"/>
