@@ -40,6 +40,7 @@ class ArtWork : NSObject, MKAnnotation {
 let artWork = ArtWork(title: "Republic Square", locationName: "Belgrade Center", discipline: "Sculpture", coordinate: CLLocationCoordinate2D(latitude: 44.816088, longitude: 20.459962), photo: #imageLiteral(resourceName: "Trg republike"))
 let boutique = ArtWork(title: "Boutique", locationName: "Belgrade Center", discipline: "Caffe Restoraunt ", coordinate: CLLocationCoordinate2D(latitude: 44.816158, longitude: 20.459794), photo: #imageLiteral(resourceName: "boutique"))
 let nationalTheatre = ArtWork(title: "National Theatre", locationName: "Belgrade Center", discipline: "Theatre", coordinate: CLLocationCoordinate2D(latitude: 44.817018, longitude: 20.461017), photo: #imageLiteral(resourceName: "Narodno_pozoriste_u_Beogradu"))
+let culturalCenterBelgrade = ArtWork(title: "Cultural Center Belgrade", locationName: "Belgrade Center", discipline: "Cultural Center", coordinate: CLLocationCoordinate2D(latitude: 44.815473, longitude: 20.459711), photo: #imageLiteral(resourceName: "kulturniCentarBeograda"))
 
 extension OutTime : MKMapViewDelegate {
     //mapView(_:viewForAnnotation:) poziva svaki annotation koji smo dali mapi da bih dobili prikaz za svaki annotation
