@@ -102,6 +102,10 @@
                                                     <constraint firstItem="Moo-RX-tNZ" firstAttribute="leading" secondItem="JYk-Zg-cHH" secondAttribute="leading" id="bCr-OI-ayX"/>
                                                     <constraint firstAttribute="trailing" secondItem="Moo-RX-tNZ" secondAttribute="trailing" id="ipD-AQ-D3f"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="artWorkImage" destination="dpd-u8-9H4" id="bVN-1O-5JP"/>
+                                                    <outlet property="artWorkName" destination="BZ4-ea-12v" id="KED-L8-60O"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
