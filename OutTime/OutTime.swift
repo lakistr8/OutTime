@@ -152,7 +152,7 @@ extension OutTime: UICollectionViewDataSource {
         let art = arts[indexPath.row]
         
         cell.artWorkName.text = art.title
-        
+        cell.artWorkImage.image = art.photo
         
         return cell
     }
