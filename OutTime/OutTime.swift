@@ -154,6 +154,29 @@ extension OutTime: UITableViewDataSource {
     
 }
 
+extension OutTime: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        
+        return arts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtWorkItems",
+                                                      for: indexPath) as! ArtWorkItems
+        
+        
+        return cell
+    }
+}
 
 
 
