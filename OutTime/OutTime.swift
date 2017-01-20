@@ -181,19 +181,19 @@ extension OutTime: UICollectionViewDataSource {
 
 extension OutTime: UICollectionViewDelegateFlowLayout {
     
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let layout = collectionViewLayout as! GridLayout
-//        
-//        let availableWidth = collectionView.bounds.size.width
-//        let columns = (availableWidth / 4 > 150) ? 4 : 2
-//        var itemTotalWidth = availableWidth - CGFloat(columns-1) * layout.minimumInteritemSpacing
-//        itemTotalWidth -= (layout.sectionInset.left + layout.sectionInset.right)
-//        
-//        let itemWidth = itemTotalWidth / CGFloat(columns)
-//        return CGSize(width: itemWidth, height: itemWidth)
-//    }
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let layout = collectionViewLayout as! GridLayout
+        
+        let availableWidth = collectionView.bounds.size.width
+        let columns = (availableWidth / 4 > 150) ? 4 : 2
+        var itemTotalWidth = availableWidth - CGFloat(columns-1) * layout.minimumInteritemSpacing
+        itemTotalWidth -= (layout.sectionInset.left + layout.sectionInset.right)
+        
+        let itemWidth = itemTotalWidth / CGFloat(columns)
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
     
 }
 
