@@ -18,12 +18,14 @@ class ArtWork : NSObject, MKAnnotation {
     let locationName : String
     let discipline : String
     let coordinate : CLLocationCoordinate2D
+    let photo : UIImage
     
-    init(title : String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title : String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D, photo: UIImage) {
         self.title = title
         self.locationName = locationName
         self.discipline = discipline
         self.coordinate = coordinate
+        self.photo = photo
         
         super.init()
         
@@ -35,9 +37,9 @@ class ArtWork : NSObject, MKAnnotation {
 }
 
 //kreirao sam instancu od te klase i dodelio sam joj sve parametre!
-let artWork = ArtWork(title: "Republic Square", locationName: "Belgrade Center", discipline: "Sculpture", coordinate: CLLocationCoordinate2D(latitude: 44.816088, longitude: 20.459962))
-let boutique = ArtWork(title: "Boutique", locationName: "Belgrade Center", discipline: "Caffe Restoraunt ", coordinate: CLLocationCoordinate2D(latitude: 44.816158, longitude: 20.459794))
-let nationalTheatre = ArtWork(title: "National Theatre", locationName: "Belgrade Center", discipline: "Theatre", coordinate: CLLocationCoordinate2D(latitude: 44.817018, longitude: 20.461017))
+let artWork = ArtWork(title: "Republic Square", locationName: "Belgrade Center", discipline: "Sculpture", coordinate: CLLocationCoordinate2D(latitude: 44.816088, longitude: 20.459962), photo: #imageLiteral(resourceName: "Trg republike"))
+let boutique = ArtWork(title: "Boutique", locationName: "Belgrade Center", discipline: "Caffe Restoraunt ", coordinate: CLLocationCoordinate2D(latitude: 44.816158, longitude: 20.459794), photo: #imageLiteral(resourceName: "boutique"))
+let nationalTheatre = ArtWork(title: "National Theatre", locationName: "Belgrade Center", discipline: "Theatre", coordinate: CLLocationCoordinate2D(latitude: 44.817018, longitude: 20.461017), photo: #imageLiteral(resourceName: "Narodno_pozoriste_u_Beogradu"))
 
 extension OutTime : MKMapViewDelegate {
     //mapView(_:viewForAnnotation:) poziva svaki annotation koji smo dali mapi da bih dobili prikaz za svaki annotation
