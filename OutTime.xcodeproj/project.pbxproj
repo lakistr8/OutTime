@@ -62,18 +62,50 @@
 		E85B5F801DD8C9EC0088998C /* OutTime */ = {
 			isa = PBXGroup;
 			children = (
-				E85B5F811DD8C9EC0088998C /* AppDelegate.swift */,
+				E86A93681E3364BE00F8298C /* OutTimeStoryboard */,
+				E86A93691E3364D100F8298C /* CollectionView */,
+				E86A936A1E3364EA00F8298C /* ArtWorksClass */,
+				E86A93671E3364A300F8298C /* Do Not Touch! */,
+			);
+			path = OutTime;
+			sourceTree = "<group>";
+		};
+		E86A93671E3364A300F8298C /* Do Not Touch! */ = {
+			isa = PBXGroup;
+			children = (
 				E85B5F881DD8C9EC0088998C /* Assets.xcassets */,
 				E85B5F991DDA0FEE0088998C /* Backgrounds.xcassets */,
 				E85B5F8A1DD8C9EC0088998C /* LaunchScreen.storyboard */,
-				E8C9E0DF1DDC69A90078CC66 /* OutTime.storyboard */,
-				E86A93651E32465400F8298C /* GridLayout.swift */,
-				E8C9E0E11DDC6D870078CC66 /* OutTime.swift */,
-				E86A93631E32440400F8298C /* ArtWorkItems.swift */,
-				E81599A61DDF17C7006D06CE /* ArtWork.swift */,
 				E85B5F8D1DD8C9EC0088998C /* Info.plist */,
 			);
-			path = OutTime;
+			name = "Do Not Touch!";
+			sourceTree = "<group>";
+		};
+		E86A93681E3364BE00F8298C /* OutTimeStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				E85B5F811DD8C9EC0088998C /* AppDelegate.swift */,
+				E8C9E0DF1DDC69A90078CC66 /* OutTime.storyboard */,
+				E8C9E0E11DDC6D870078CC66 /* OutTime.swift */,
+			);
+			name = OutTimeStoryboard;
+			sourceTree = "<group>";
+		};
+		E86A93691E3364D100F8298C /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E86A93651E32465400F8298C /* GridLayout.swift */,
+				E86A93631E32440400F8298C /* ArtWorkItems.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		E86A936A1E3364EA00F8298C /* ArtWorksClass */ = {
+			isa = PBXGroup;
+			children = (
+				E81599A61DDF17C7006D06CE /* ArtWork.swift */,
+			);
+			name = ArtWorksClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
