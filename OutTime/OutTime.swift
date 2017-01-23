@@ -21,6 +21,8 @@ enum Errors : Error {
 class OutTime: UIViewController, UISearchControllerDelegate {
     
     
+    
+    
     var arts = [ArtWork]()
     var localeManager = CLLocationManager()
     var searchText : String?
@@ -68,6 +70,7 @@ extension Internal {
         //poziv za prikazivanje odredjene tacke na osnovu kordinata i teksta unosa
         maps.addAnnotations([artWork, boutique, nationalTheatre, culturalCenterBelgrade])
         maps.delegate = self
+        
         
     }
 }
@@ -177,13 +180,36 @@ extension OutTime: UICollectionViewDelegateFlowLayout {
     
 }
 
-extension OutTime {
+extension OutTime  {
     
     @IBAction func didTapSearchBar(_ sender: UIBarButtonItem) {
         
+        self.navigationItem.title = nil
+        self.navigationItem.leftBarButtonItem = nil
         
-        
+                    searchController = {
+                        
+                        
+                       let sc = UISearchController(searchResultsController: nil)
+//                        sc.searchResultsUpdater = self
+            
+                        sc.hidesNavigationBarDuringPresentation = false
+                        sc.dimsBackgroundDuringPresentation = false
+            
+                        sc.searchBar.searchBarStyle = UISearchBarStyle.minimal
+                        self.navigationItem.titleView = sc.searchBar
+                        sc.searchBar.sizeToFit()
+            
+                        return sc
+                    }()
     }
-    
+                func updateSearchResults (for searchControler: UISearchController) {
+                    
+                    self.searchText = searchControler.searchBar.text
+//                    self.collectionView.reloadData()
+                    
+    }
 }
+
+
 
