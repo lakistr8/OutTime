@@ -14,7 +14,7 @@
         <scene sceneID="G7q-Ut-PaG">
             <objects>
                 <navigationController id="rkN-Mt-s5A" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cqg-72-m4W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqg-72-m4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -146,7 +146,9 @@
                             <constraint firstItem="Lp5-z5-hrx" firstAttribute="top" secondItem="N6g-SL-hE9" secondAttribute="bottom" id="vY5-79-d3B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="OutTime" id="ce0-vf-xWU"/>
+                    <navigationItem key="navigationItem" title="OutTime" id="ce0-vf-xWU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="KMs-A3-DxE"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="maps" destination="T9H-LT-Hml" id="4RN-3b-MGp"/>
                     </connections>
