@@ -147,7 +147,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="OutTime" id="ce0-vf-xWU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="KMs-A3-DxE"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="KMs-A3-DxE">
+                            <connections>
+                                <action selector="didTapSearchBar:" destination="HB3-Xp-xi0" id="iNx-Te-qYj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="maps" destination="T9H-LT-Hml" id="4RN-3b-MGp"/>

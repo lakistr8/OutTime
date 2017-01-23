@@ -177,5 +177,13 @@ extension OutTime: UICollectionViewDelegateFlowLayout {
     
 }
 
-
+extension OutTime {
+    
+    @IBAction func didTapSearchBar(_ sender: UIBarButtonItem) {
+        
+        
+        
+    }
+    
+}
 
