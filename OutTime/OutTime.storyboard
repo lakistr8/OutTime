@@ -73,12 +73,19 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPM-B7-BFB">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="WPM-B7-BFB" secondAttribute="bottom" id="041-r5-OFW"/>
+                                                                <constraint firstAttribute="trailing" secondItem="WPM-B7-BFB" secondAttribute="trailing" id="0XY-dE-2WU"/>
                                                                 <constraint firstItem="dpd-u8-9H4" firstAttribute="leading" secondItem="Moo-RX-tNZ" secondAttribute="leading" id="FDO-xl-Xwd"/>
+                                                                <constraint firstItem="WPM-B7-BFB" firstAttribute="top" secondItem="Moo-RX-tNZ" secondAttribute="top" id="Hbf-3f-iTJ"/>
                                                                 <constraint firstAttribute="trailing" secondItem="BZ4-ea-12v" secondAttribute="trailing" id="JI4-FM-Mm6"/>
                                                                 <constraint firstItem="dpd-u8-9H4" firstAttribute="top" secondItem="Moo-RX-tNZ" secondAttribute="top" id="LNu-oN-390"/>
+                                                                <constraint firstItem="WPM-B7-BFB" firstAttribute="leading" secondItem="Moo-RX-tNZ" secondAttribute="leading" id="b4s-rT-vzk"/>
                                                                 <constraint firstAttribute="bottom" secondItem="BZ4-ea-12v" secondAttribute="bottom" id="etA-et-Kya"/>
                                                                 <constraint firstAttribute="bottom" secondItem="dpd-u8-9H4" secondAttribute="bottom" id="i7W-Q3-0uQ"/>
                                                                 <constraint firstAttribute="trailing" secondItem="dpd-u8-9H4" secondAttribute="trailing" id="j3Y-Ot-En6"/>
