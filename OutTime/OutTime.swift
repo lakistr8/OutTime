@@ -188,27 +188,26 @@ extension OutTime  {
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.prompt = String("Out Time")
         
-                    searchController = {
-                        
-                        
-                       let sc = UISearchController(searchResultsController: nil)
-//                        sc.searchResultsUpdater = self
+        searchController = {
             
-                        sc.hidesNavigationBarDuringPresentation = false
-                        sc.dimsBackgroundDuringPresentation = false
+            let sc = UISearchController(searchResultsController: nil)
+//            sc.searchResultsUpdater = self
             
-                        sc.searchBar.searchBarStyle = UISearchBarStyle.minimal
-                        self.navigationItem.titleView = sc.searchBar
-                        sc.searchBar.sizeToFit()
+            sc.hidesNavigationBarDuringPresentation = false
+            sc.dimsBackgroundDuringPresentation = false
             
-                        return sc
-                    }()
+            sc.searchBar.searchBarStyle = UISearchBarStyle.minimal
+            self.navigationItem.titleView = sc.searchBar
+            sc.searchBar.sizeToFit()
+            
+            return sc
+        }()
     }
-                func updateSearchResults (for searchControler: UISearchController) {
-                    
-                    self.searchText = searchControler.searchBar.text
-//                    self.collectionView.reloadData()
-                    
+    func updateSearchResults (for searchControler: UISearchController) {
+        
+        self.searchText = searchControler.searchBar.text
+//        self.collectionView.reloadData()
+        
     }
 }
 
