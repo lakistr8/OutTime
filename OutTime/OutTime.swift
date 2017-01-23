@@ -75,35 +75,6 @@ extension Internal {
     }
 }
 
-
-
-//extension OutTime : UISearchResultsUpdating {
-//    
-//    func setSearch() {
-//        searchController = {
-//            
-//           let sc = UISearchController(searchResultsController: nil)
-//            sc.searchResultsUpdater = self
-//            
-//            sc.hidesNavigationBarDuringPresentation = false
-//            sc.dimsBackgroundDuringPresentation = false
-//            
-//            sc.searchBar.searchBarStyle = UISearchBarStyle.minimal
-//            self.navigationItem.titleView = sc.searchBar
-//            sc.searchBar.sizeToFit()
-//            
-//            return sc
-//        }()
-//    }
-//    func updateSearchResults (for searchControler: UISearchController) {
-//        
-//        self.searchText = searchControler.searchBar.text
-//        self.tableView.reloadData()
-//        
-//    }
-//}
-
-
 extension OutTime {
     //metod za soptvenu lokaciju!
     
