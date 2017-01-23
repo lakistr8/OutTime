@@ -186,6 +186,7 @@ extension OutTime  {
         
         self.navigationItem.title = nil
         self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.prompt = String("Out Time")
         
                     searchController = {
                         
