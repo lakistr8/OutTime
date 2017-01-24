@@ -42,6 +42,7 @@ let boutique = ArtWork(title: "Boutique", locationName: "Belgrade Center", disci
 let nationalTheatre = ArtWork(title: "National Theatre", locationName: "Belgrade Center", discipline: "Theatre", coordinate: CLLocationCoordinate2D(latitude: 44.817018, longitude: 20.461017), photo: #imageLiteral(resourceName: "Narodno_pozoriste_u_Beogradu"))
 let culturalCenterBelgrade = ArtWork(title: "Cultural Center Belgrade", locationName: "Belgrade Center", discipline: "Cultural Center", coordinate: CLLocationCoordinate2D(latitude: 44.815473, longitude: 20.459711), photo: #imageLiteral(resourceName: "kulturniCentarBeograda"))
 let kfc = ArtWork(title: "KFC", locationName: "Belgrade Center", discipline: "Restoraunt", coordinate: CLLocationCoordinate2D(latitude: 44.818449, longitude: 20.458421), photo: #imageLiteral(resourceName: "kfc"))
+let paulAndShark = ArtWork(title: "Paul and Shark", locationName: "Belgrade Center", discipline: "Boutique", coordinate: CLLocationCoordinate2D(latitude: 44.818190, longitude: 20.458724), photo: #imageLiteral(resourceName: "paulAndShark"))
 extension OutTime : MKMapViewDelegate {
     //mapView(_:viewForAnnotation:) poziva svaki annotation koji smo dali mapi da bih dobili prikaz za svaki annotation
     private func mapView(mapVIew: MKMapView!, viewForAnnotation annotation:MKAnnotation) -> MKAnnotationView! {
