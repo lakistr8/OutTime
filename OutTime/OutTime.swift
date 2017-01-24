@@ -68,7 +68,7 @@ extension Internal {
         //poziv za centralnu tacku u mapi!
         centerMapOnLocation(location: initialLocation)
         //poziv za prikazivanje odredjene tacke na osnovu kordinata i teksta unosa
-        maps.addAnnotations([artWork, boutique, nationalTheatre, culturalCenterBelgrade])
+        maps.addAnnotations([artWork, boutique, nationalTheatre, culturalCenterBelgrade, kfc])
         maps.delegate = self
         
         
@@ -99,7 +99,8 @@ extension OutTime {
         let boutique = ArtWork(title: "Boutique", locationName: "Belgrade Center", discipline: "Caffe Restoraunt ", coordinate: CLLocationCoordinate2D(latitude: 44.816158, longitude: 20.459794), photo: #imageLiteral(resourceName: "boutique"))
         let nationalTheatre = ArtWork(title: "National Theatre", locationName: "Belgrade Center", discipline: "Theatre", coordinate: CLLocationCoordinate2D(latitude: 44.817018, longitude: 20.461017), photo: #imageLiteral(resourceName: "Narodno_pozoriste_u_Beogradu"))
         let culturalCenterBelgrade = ArtWork(title: "Cultural Center Belgrade", locationName: "Belgrade Center", discipline: "Cultural Center", coordinate: CLLocationCoordinate2D(latitude: 44.815473, longitude: 20.459711), photo: #imageLiteral(resourceName: "kulturniCentarBeograda"))
-        arts += [artWork, boutique, nationalTheatre, culturalCenterBelgrade]
+        let kfc = ArtWork(title: "KFC", locationName: "Belgrade Center", discipline: "Restoraunt", coordinate: CLLocationCoordinate2D(latitude: 44.818449, longitude: 20.458421), photo: #imageLiteral(resourceName: "kfc"))
+        arts += [artWork, boutique, nationalTheatre, culturalCenterBelgrade, kfc]
     }
     
 }
