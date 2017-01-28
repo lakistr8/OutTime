@@ -25,7 +25,7 @@ class OutTime: UIViewController, UISearchControllerDelegate {
     
     var arts = [ArtWork]()
     var localeManager = CLLocationManager()
-    var searchText : String?
+    open var searchText : String?
     var searchController : UISearchController!
     @IBOutlet weak var maps: MKMapView!
     //kordinate beograda dao sam geografsku sirinu i duzinu da bi mapa mogla da iscrta
@@ -126,8 +126,9 @@ extension OutTime: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtWorkItems",
                                                       for: indexPath) as! ArtWorkItems
         let art = arts[indexPath.row]
+        searchText = art.title
         
-        cell.artWorkName.text = art.title
+        cell.artWorkName.text = searchText
         cell.artWorkImage.image = art.photo
         
         return cell
